@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissor</h1>
+    <div class="message"><h4>Hi,Lets's Play !</h4></div>
+
+    <div id="main">
+      <div id="div_player">
+        <a class="img1" data-selection="rock" onclick="playerSelection('rock')">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbfqswvfnF4LKEG0K_-ZsdVVmkk9f6giIWhOedQ9jpYUD4jQBvnyZlC2ryil0jOVqfrnA&usqp=CAU"
+            alt="Rock"
+          />
+        </a>
+        <a
+          class="img1"
+          data-selection="paper"
+          onclick="playerSelection('paper')"
+        >
+          <img
+            src="https://www.vhv.rs/dpng/d/490-4906131_rock-paper-scissors-clipart-rock-paper-scissors-png.png"
+            alt="Paper"
+          />
+        </a>
+        <a
+          class="img1"
+          data-selection="scissor"
+          onclick="playerSelection('scissor')"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnGl8rflKvOAtHGAeTbVNihckaeR8d_FOdrXqpNAQJvsDbMfZm5DcpdB3P_7FGsOqU90o&usqp=CAU"
+            alt="Scissor"
+          />
+        </a>
+      </div>
+
+      <h2 id="vs">VS</h2>
+      <div class="div_com">
+        <p>COMPUTER</p>
+      </div>
+    </div>
+
+    <div class="score"></div>
+
+    <button id="reset">Reset Game</button>
+    <audio id="win-sound" src="./mixkit-wind-chimes-2014.wav"></audio>
+    <audio id="rules-sound" src="./Rps Lizard Spock.mp3"></audio>
+    <audio id="lose-sound" src="./mixkit-losing-bleeps-2026.wav"></audio>
+    <audio id="tie-sound" src="./mixkit-small-hit-in-a-game-2072.wav"></audio>
+
+    <script src="./play.js"> </script>
+  </body>
+</html>
