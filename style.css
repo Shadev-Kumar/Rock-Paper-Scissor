@@ -69,9 +69,9 @@ body {
 
 #div_player a img {
   width: 100px;
-  height: 100px;
+  height: 110px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 10%;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -166,7 +166,7 @@ body {
   height: 200px;
   width: 200px;
   transition: transform 0.2s ease-in-out;
-  border-radius: 50%;
+  border-radius: 5%;
   object-fit: cover;
 }
 
