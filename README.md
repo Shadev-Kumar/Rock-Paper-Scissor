@@ -4,13 +4,10 @@ Rock Paper Scissor Game built using HTML, CSS and Vanila JS.
 
 This project is a simple implementation of the popular game "Rock-Paper-Scissors" using Web Dev Tools. The game allows users to play against the computer in a series of rounds to determine the winner.
 
-## Requirements
 
-- JavaScript, HTML, CSS, API
+## To Play
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+go to : https://deft-banoffee-dffc47.netlify.app
 
 ## Contributing
 
