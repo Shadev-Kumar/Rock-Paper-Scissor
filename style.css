@@ -1,10 +1,14 @@
 body {
   background-color: aquamarine;
+  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 2px, transparent 2px, transparent 4px);
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #main {
@@ -21,23 +25,31 @@ body {
   justify-content: space-between;
   transition: transform 0.2s ease-in-out;
 }
+
 #vs {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
 .message {
   font-size: 24px;
   margin: 10px;
-  text-justify: distribute;
+  text-align: justify;
+  font-weight: bold; 
 }
+
 .message h4 {
   margin: 10px;
 }
+
 .score {
   font-size: 18px;
+  text-align: center;
 }
+
 #main:hover {
   box-shadow: 0 0 30px rgb(0, 0, 0);
   transform: scale(1.01);
@@ -48,24 +60,34 @@ body {
   flex-direction: column;
   margin-right: 50px;
 }
+
 #div_player a {
   display: flex;
   margin: 5px;
+  text-decoration: none;
 }
 
 #div_player a img {
   width: 100px;
   height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
 }
+
 #div_initial {
   display: flex;
   flex-direction: column;
 }
+
 #div_initial img {
   width: 100px;
   height: 100px;
   margin: 5px;
+  object-fit: cover;
+  border-radius: 50%;
 }
+
 #div_initial img:hover {
   opacity: 1;
   box-shadow: 0 0 20px rgb(127, 255, 212);
@@ -77,14 +99,19 @@ body {
   justify-content: center;
   align-items: center;
 }
-.div_com p{
+
+.div_com p {
   font-size: 30px;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  font-weight: bold;
 }
+
 .score {
+  font-size: 18px;
   text-align: center;
+  font-weight: bold;
 }
 
 #div_player a:hover {
@@ -96,6 +123,7 @@ body {
   border: none;
   outline: none;
 }
+
 #reset {
   color: aquamarine;
   background-color: black;
@@ -108,6 +136,7 @@ body {
   border-radius: 5px;
   border-color: aquamarine;
 }
+
 #reset:hover {
   background-color: aquamarine;
   color: black;
@@ -120,6 +149,7 @@ body {
   height: 100px;
   opacity: 1;
   transition: transform 0.2s ease-in-out;
+  border-radius: 50%;
 }
 
 #div_player img:hover {
@@ -136,7 +166,10 @@ body {
   height: 200px;
   width: 200px;
   transition: transform 0.2s ease-in-out;
+  border-radius: 50%;
+  object-fit: cover;
 }
+
 .comImage:hover {
   opacity: 1;
   box-shadow: 0 0 20px rgb(127, 255, 212);
@@ -149,10 +182,12 @@ body {
   display: flex;
   margin: 5px;
 }
+
 .di:hover {
   opacity: 1;
   box-shadow: 0 0 20px rgb(127, 255, 212);
 }
+
 .animate {
   animation: shake 0.4s;
 }
@@ -175,15 +210,40 @@ body {
   }
 }
 
-@media (max-width:600px){
-  .div_com p{
+@media (max-width: 600px) {
+  .div_com p {
     font-size: 18px;
   }
-  #main{
+  
+  #main {
     width: 70%;
   }
+  
   .comImage {
     height: 100px;
     width: 100px;
   }
 }
+
+/* Additional hover effect */
+.di:hover img {
+  filter: brightness(0.7);
+}
+
+/*logo */
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+header img {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+}
+
