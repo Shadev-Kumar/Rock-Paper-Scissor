@@ -155,7 +155,7 @@ body {
 
 #div_player img:hover {
   opacity: 1;
-  box-shadow: 0 0 2px rgb(127, 255, 212);
+  box-shadow: 0 0 20px rgb(127, 255, 212);
   transform: scale(1.05);
 }
 
